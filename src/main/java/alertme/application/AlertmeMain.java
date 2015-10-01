@@ -2,8 +2,7 @@ package alertme.application;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import alertme.configuration.FeedConsumerServiceConfiguration;
-import alertme.configuration.FeedServiceConfiguration;
+import alertme.configuration.ETnetFeedServiceConfiguration;
 
 public class AlertmeMain {
 
@@ -13,8 +12,9 @@ public class AlertmeMain {
 
 	private void start() {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-		context.register(FeedServiceConfiguration.class);
-		context.register(FeedConsumerServiceConfiguration.class);
+		//context.register(FeedServiceConfiguration.class);
+		//context.register(FeedConsumerServiceConfiguration.class);
+		context.register(ETnetFeedServiceConfiguration.class);
 		context.refresh();
 		// GigaSpace space = (GigaSpace) context.getBean("space");
 	}

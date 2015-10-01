@@ -19,9 +19,8 @@ public class ETnetFeedService {
 		return space;
 	}
 
-	public ETnetFeedService start() {
-		// TODO Auto-generated method stub
-		return null;
+	public void grepFeed() {
+		System.out.println("grep feed! " + space.hashCode());
 	}
 
 }
