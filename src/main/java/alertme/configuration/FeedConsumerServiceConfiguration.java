@@ -18,8 +18,7 @@ public class FeedConsumerServiceConfiguration {
 	GigaSpace space;
 	
 	@Bean
-	public FeedConsumerService consumerService() {
-		System.out.println("consumer space: " + space.hashCode());
+	public FeedConsumerService consumerService() {		
 		return new FeedConsumerService(space);
 	}
 

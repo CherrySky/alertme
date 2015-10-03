@@ -18,7 +18,6 @@ public class GigaspaceServiceConfiguration {
 		UrlSpaceConfigurer spaceConfigurer = new UrlSpaceConfigurer(LOCAL_SPACE_URL);
 		PlatformTransactionManager ptm = new DistributedJiniTxManagerConfigurer().transactionManager();
 		GigaSpace space = new GigaSpaceConfigurer(spaceConfigurer).transactionManager(ptm).gigaSpace();
-		System.out.println("space hash: " + space.hashCode());
 		return space;
 	}
 
