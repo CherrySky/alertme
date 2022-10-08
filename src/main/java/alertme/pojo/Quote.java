@@ -14,6 +14,7 @@ public class Quote {
 	private String id;
 	private String stockName;
 	private BigDecimal closePrice;
+	private String remark;
 
 	@SpaceId(autoGenerate = true)
 	public String getId() {
