@@ -22,6 +22,7 @@ public class FeedServiceConfigurationContainerTest {
 	public void testFeedServiceConstructor() {
 		Quote quote = new Quote();
 		quote.setStockName("388");
+		// add test comment
 		
 		feedService.getSpace().write(quote);
 
